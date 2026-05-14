@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['id'])) {
-    $conexion = new mysqli("localhost", "root", "", "usuariosdb");
+    $conexion = new mysqli("localhost", "root", "", "usuarios3db");
     if ($conexion->connect_error) die("Error de conexión");
 
     $id = intval($_GET['id']);
