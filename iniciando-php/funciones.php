@@ -1,43 +1,51 @@
 <?php
 
-/* Ejemplo de función que no recibe parámetros*/
-function saludar()
-{
-    echo "Buenas tardes"."<br>";
+function saludo() {
+  echo "<h3>Hola</h3>";
 }
 
-/*Funciones con parámetros*/
+echo saludo();
 
-function saludo($nombre)
-{
-    echo "Buenas tardes ".$nombre."<br>";
+function saludar($nombre) {
+  echo "<h3>Hola ".$nombre."</h3>";
 }
 
-function sumar($a, $b) 
-{
-    $c=$a+$b;
-    return $c;
+echo saludar("Juan");
+
+function CalcularPrecioTotal($precio, $cantidad) {
+  $total = $precio * $cantidad;
+  return $total;
 }
 
-function restar($a, $b) 
-{
-    return $a-$b;
+echo CalcularPrecioTotal(10, 5);
+
+function Sumar($a, $b) {
+  return $a + $b;
 }
 
-/*Función para saber si un número es par o impar*/
+$suma= Sumar(5, 10);
 
+echo "<h3>La suma es: ".$suma."</h3>";
 
-saludar ();
-saludo ("diana");
-saludo ("Juan");
-$suma = sumar (9,5);
-echo sumar (10,5);
-echo "<br>";
-echo $suma."<br>";
- $r = restar (9,5);
- echo $r."<br>";
+echo $suma * 2;
 
+function SaludarNombre($nombre = "Invitado") {
+  echo "<h3>Hola ".$nombre." </h3>";
+}
 
+echo SaludarNombre();
 
+echo SaludarNombre("Pedro");
 
+$precio = 10;
+
+function DuplicarPrecio($precio) {
+  $precio;
+  $precio = $precio * 2;
+  return $precio;
+}
+
+echo DuplicarPrecio($precio);
+
+echo "<h3>El precio es: ".$precio."</h3>";
 ?>

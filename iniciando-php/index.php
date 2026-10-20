@@ -49,5 +49,6 @@
       echo "<h3>El valor de i es: ".$i."</h3>";
         $i++;
     } while ($i < 5);
+
 ?>
 <h2>Fin del programa</h2>
