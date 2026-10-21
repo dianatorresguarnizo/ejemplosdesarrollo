@@ -1,51 +1,85 @@
 <?php
 
-function saludo() {
-  echo "<h3>Hola</h3>";
-}
+    //Funciones PHP
+    function suma($a, $b) {
+        return $a + $b;
+    }
 
-echo saludo();
+    echo suma(5, 10);
+    echo "<br>";
+    echo suma(10, 20);
 
-function saludar($nombre) {
-  echo "<h3>Hola ".$nombre."</h3>";
-}
+    function CalcularAreaRectangulo($base, $altura) {
+        return $base * $altura;
+    }
+    echo "<br>";
+    echo CalcularAreaRectangulo(5, 10);
 
-echo saludar("Juan");
+    function saludar() {
+        return "Hola Mundo desde una función";
+    }
+    echo "<br>";
+    echo saludar();
 
-function CalcularPrecioTotal($precio, $cantidad) {
-  $total = $precio * $cantidad;
-  return $total;
-}
+    function saludando() {
+        echo "Hola Mundo 2";
+        echo "Hola Mundo 2";
+        echo "Hola Mundo 2";
+        echo "Hola Mundo 2";
+    }
+    echo "<br>";
+    saludando();
 
-echo CalcularPrecioTotal(10, 5);
+    function saludo($nombre) {
+        echo "Hola mi nombre es: ".$nombre;
+    }
+    echo "<br>";
+    saludo("Juan");
+    
+    saludo("Diana");
+    echo "<br>";
+    echo "<br>";
+    echo "<hr>";
 
-function Sumar($a, $b) {
-  return $a + $b;
-}
+    function suma2($a, $b) {
+        return $a + $b;
+    }
+    
+    $s = suma2(5, 10);
 
-$suma= Sumar(5, 10);
+    function multiplicar($a, $b) {
+        return $a * $b;
+    }
 
-echo "<h3>La suma es: ".$suma."</h3>";
+    $m = multiplicar($s,$s);
+    
+    echo $m;
 
-echo $suma * 2;
+     echo "<hr>";
 
-function SaludarNombre($nombre = "Invitado") {
-  echo "<h3>Hola ".$nombre." </h3>";
-}
+    function despido($nombre="Visitante") {
+        echo "<h3>Adiós ".$nombre."</h3>";
+    }
 
-echo SaludarNombre();
+    despido("Juan");
+    echo "<br>";
+    despido("Diana");
+    echo "<br>";
 
-echo SaludarNombre("Pedro");
+    despido();
 
-$precio = 10;
+    echo "<hr>";
 
-function DuplicarPrecio($precio) {
-  $precio;
-  $precio = $precio * 2;
-  return $precio;
-}
+    $numero = 5;
+    
+    function duplicar($numero) {
+        return $numero * 2;
+    }
 
-echo DuplicarPrecio($precio);
+    echo duplicar($numero);
+    echo "<hr>";
+    echo $numero;
 
-echo "<h3>El precio es: ".$precio."</h3>";
+
+
 ?>

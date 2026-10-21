@@ -1,5 +1,7 @@
 <h1>Mi primer programa en PHP</h1>
 <?php
+  include("funciones2.php");
+
   //Mi primer programa en PHP
   echo "Hola mundo desde PHP. "."<br>";
   echo "<h3>Test 1</h3>";
@@ -49,6 +51,11 @@
       echo "<h3>El valor de i es: ".$i."</h3>";
         $i++;
     } while ($i < 5);
+
+  echo bienvenida();
+
+  $r = restar(10, 5);
+  echo "<h3>El resultado de la resta es: ".$r."</h3>";
 
 ?>
 <h2>Fin del programa</h2>
